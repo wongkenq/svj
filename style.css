@@ -370,6 +370,10 @@ a {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
   background-color: white;
   height: auto;
   display: flex;
@@ -449,7 +453,7 @@ nav a:hover {
 }
 
 .features-left {
-  max-width: 50%;
+  width: 100%;
 }
 
 .features-right {
@@ -468,7 +472,14 @@ nav a:hover {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   cursor: pointer;
+}
+
+.features-right span h3 {
   text-transform: uppercase;
+}
+
+.features-right span:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .features-image {
@@ -476,8 +487,10 @@ nav a:hover {
 }
 
 .features img {
-  max-width: 100%;
   border-radius: 5px;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
 
 .features-right .hidden {
