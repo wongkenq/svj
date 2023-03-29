@@ -1,6 +1,7 @@
 const features = document.querySelectorAll('.features-right > span');
 const featuresP = document.querySelectorAll('.features-right > span > p');
 const featuresImg = document.querySelector('.features-image > img');
+const featuresItem = document.querySelectorAll('.features-items');
 
 features.forEach((span) => span.addEventListener('click', displayFeatures));
 
@@ -9,13 +10,15 @@ function displayFeatures(e) {
     return;
   } else if (e.target.classList.value === 'features-items') {
     featuresP.forEach((p) => p.classList.add('hidden'));
+    featuresItem.forEach((item) => item.classList.remove('white'));
     e.target.querySelector('p').classList.remove('hidden');
+    e.target.classList.add('white');
   } else if (e.target.parentNode.classList.value === 'features-items') {
     featuresP.forEach((p) => p.classList.add('hidden'));
+    featuresItem.forEach((item) => item.classList.remove('white'));
     e.target.nextElementSibling.classList.remove('hidden');
+    e.target.parentNode.classList.add('white');
   }
-
-  console.log(e.target.innerText.split('\n'));
 
   switch (e.target.innerText.split('\n')[0]) {
     case 'HEALTH EDUCATION':
@@ -43,3 +46,5 @@ function displayFeatures(e) {
       break;
   }
 }
+
+document.querySelector('.carousel').slick({});
