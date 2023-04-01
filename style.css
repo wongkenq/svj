@@ -369,6 +369,10 @@ a {
   color: #393939;
 }
 
+button {
+  cursor: pointer;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -431,7 +435,8 @@ nav a:hover {
   max-width: 60em;
 }
 
-.header a {
+.header a,
+.links button {
   background-color: #0b6bfe;
   border-color: #0b6bfe;
   color: white;
@@ -441,6 +446,11 @@ nav a:hover {
   border-radius: 4px;
   letter-spacing: -0.03em;
   font-weight: 600;
+}
+
+.header a:hover,
+.links button:hover {
+  opacity: 0.87;
 }
 
 .features {
@@ -537,6 +547,10 @@ nav a:hover {
   padding-top: 1em;
 }
 
+.yelp {
+  margin-bottom: 3em;
+}
+
 .yelp-container {
   width: 500px;
   min-height: 250px;
@@ -570,4 +584,46 @@ nav a:hover {
 
 .carousel img {
   padding: 0 1em;
+}
+
+.links {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links a {
+  color: white;
+}
+
+.links > div > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links i:hover,
+.links span:hover {
+  opacity: 0.87;
+}
+
+.location,
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.125em;
+  margin-bottom: 3em;
+}
+
+.location span,
+.schedule span {
+  color: rgb(57, 57, 57);
+  font-weight: 600;
+  font-size: 0.75em;
+  margin: 0.5em 0 1em 0;
 }
