@@ -605,6 +605,10 @@ nav a:hover {
   align-items: center;
 }
 
+.links i {
+  color: #393939;
+}
+
 .links i:hover,
 .links span:hover {
   opacity: 0.87;
