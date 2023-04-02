@@ -747,8 +747,13 @@ nav a:hover {
 
 .app-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+}
+
+.app-buttons img {
+  height: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -897,6 +902,7 @@ nav a:hover {
 
   .signin {
     flex-direction: column;
+    margin: 0;
   }
 
   .signin .left {
@@ -906,5 +912,20 @@ nav a:hover {
   .signin .left,
   .signin .right {
     width: 100%;
+  }
+
+  .signin .left h3,
+  .signin .right h3 {
+    margin-bottom: 0;
+  }
+
+  .signin .left p,
+  .signin .right p {
+    font-size: 1.25em;
+  }
+
+  .app-buttons {
+    flex-direction: column;
+    margin: 1em 0;
   }
 }
