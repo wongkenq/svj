@@ -361,7 +361,7 @@ body {
 }
 
 html {
-  font-size: 10pxs;
+  /* font-size: 10pxs; */
 }
 
 a {
@@ -371,6 +371,10 @@ a {
 
 button {
   cursor: pointer;
+}
+
+.slide-menu .hidden {
+  display: none;
 }
 
 nav {
@@ -384,6 +388,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+}
+
+nav .fa-bars {
+  /* padding-right: 1em; */
+  display: none;
 }
 
 nav a {
@@ -532,6 +541,10 @@ nav a:hover {
   margin-top: 0.5em;
 }
 
+.premise .mobile {
+  display: none;
+}
+
 .success {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -630,4 +643,146 @@ nav a:hover {
   font-weight: 600;
   font-size: 0.75em;
   margin: 0.5em 0 1em 0;
+}
+
+/* .fixed-position {
+  position: fixed;
+} */
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .premise img {
+    width: 100%;
+  }
+  nav {
+    height: 60px;
+    width: 100vw;
+    /* position: relative; */
+  }
+
+  nav .fa-bars {
+    display: block;
+    position: absolute;
+    right: 1em;
+  }
+
+  nav .left a,
+  nav .right a {
+    display: none;
+  }
+  nav .left a:first-child {
+    display: block;
+    height: 40px;
+  }
+
+  nav .left img {
+    padding: 0;
+  }
+
+  .slide-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 2em;
+    gap: 1em;
+    transition: ease-in-out 0.5s;
+    transform: translateX(0%);
+    overflow: hidden;
+  }
+
+  .hidden {
+    /* display: none; */
+    transition: ease-in-out 0.5s;
+    transform: translateX(100%);
+  }
+  .slide-menu i {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    font-size: 0.75em;
+    cursor: pointer;
+  }
+
+  main {
+    background-color: rgb(247, 248, 250);
+    padding: 0 2em;
+  }
+
+  .header h1 {
+    font-size: 2.5em;
+    margin-top: 2em;
+    margin-bottom: 0;
+  }
+
+  .header p {
+    font-size: 1.2em;
+    margin-bottom: 2.5em;
+  }
+
+  .features {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .features-right span {
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  .features-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 1em; */
+  }
+
+  .features-items p {
+    padding: 0 1em;
+  }
+
+  .premise h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .premise h4 {
+    font-size: 1.25em;
+  }
+
+  .premise .desktop {
+    display: none;
+  }
+
+  .premise .mobile {
+    display: block;
+  }
+
+  .success p {
+    font-size: 1.25em;
+    text-align: center;
+    padding: 0 1em;
+  }
+
+  .yelp-container p {
+    max-width: 100%;
+  }
+
+  .links {
+    flex-direction: column;
+    width: auto;
+  }
 }

@@ -2,8 +2,13 @@ const features = document.querySelectorAll('.features-right > span');
 const featuresP = document.querySelectorAll('.features-right > span > p');
 const featuresImg = document.querySelector('.features-image > img');
 const featuresItem = document.querySelectorAll('.features-items');
+const menu = document.querySelector('.slide-menu');
+const openBtn = document.querySelector('.fa-bars');
+const closeBtn = document.querySelector('.slide-menu i');
 
 features.forEach((span) => span.addEventListener('click', displayFeatures));
+openBtn.addEventListener('click', openMenu);
+closeBtn.addEventListener('click', closeMenu);
 
 function displayFeatures(e) {
   if (e.target.nodeName === 'P') {
@@ -47,4 +52,10 @@ function displayFeatures(e) {
   }
 }
 
-document.querySelector('.carousel').slick({});
+function openMenu() {
+  menu.classList.remove('hidden');
+}
+
+function closeMenu() {
+  menu.classList.add('hidden');
+}

@@ -54,7 +54,16 @@
           ><i class="fa-sharp fa-solid fa-envelope"></i
         ></a>
       </div>
+      <i class="fa-solid fa-bars"></i>
     </nav>
+    <div class="slide-menu hidden">
+      <i class="fa-solid fa-xmark"></i>
+      <a href="/">Home</a>
+      <a href="/schedule-2020">Class Schedule</a>
+      <a href="/posts">Posts</a>
+      <a href="/upcoming-events">Upcoming Events</a>
+      <a href="/how-to-find-us">How to Find Us</a>
+    </div>
     <main>
       <div class="header">
         <h1>Silicon Valley Judo</h1>
@@ -138,7 +147,13 @@
       <div class="premise">
         <h2>Silicon Valley Offers More</h2>
         <h4>We have the classes for you...</h4>
-        <img src="/images/Slide1Websitev2-1.png" alt="Diagram of classes" />
+        <!-- <div class="premise-image"></div> -->
+        <img
+          class="desktop"
+          src="/images/Slide1Websitev2-1.png"
+          alt="Diagram of classes"
+        />
+        <img class="mobile" src="/images/Slide1WebsiteMobilev2-1.png" alt="" />
       </div>
 
       <div class="success">
@@ -238,6 +253,14 @@
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
+        responsive: [
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
       });
 
       $('.yelp').slick({
