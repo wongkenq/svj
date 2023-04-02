@@ -54,8 +54,12 @@ function displayFeatures(e) {
 
 function openMenu() {
   menu.classList.remove('hidden');
+  document.body.style.height = '100dvh';
+  document.body.style.overflowY = 'hidden';
 }
 
 function closeMenu() {
   menu.classList.add('hidden');
+  document.body.style.height = 'auto';
+  document.body.style.overflowY = 'visible';
 }

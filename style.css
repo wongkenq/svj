@@ -358,6 +358,7 @@ body {
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: -0.02em;
+  width: 100vw;
 }
 
 html {
@@ -700,9 +701,11 @@ nav a:hover {
     transition: ease-in-out 0.5s;
     transform: translateX(0%);
     overflow: hidden;
+    position: fixed;
   }
 
   .hidden {
+    /* visibility: hidden; */
     /* display: none; */
     transition: ease-in-out 0.5s;
     transform: translateX(100%);
