@@ -756,6 +756,80 @@ nav a:hover {
   height: 50px;
 }
 
+.instagram {
+  padding-top: 3em;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.upcoming-events h1 {
+  text-align: center;
+  margin: 3em 0 1em;
+}
+
+.class-schedule {
+  text-align: center;
+  background-color: rgb(30, 115, 190);
+  color: white;
+  font-size: 1.25em;
+  padding: 0.5em 0 1.5em;
+}
+
+.class-schedule a {
+  color: white;
+  background-color: #0b6bfe;
+  font-size: 0.75em;
+  font-weight: 400;
+  padding: 0.75em 1.25em;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+.event {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 4em;
+}
+
+.event:nth-of-type(odd) {
+  background-color: #c9c9c9;
+}
+
+.event div {
+  width: 50%;
+}
+
+.event img {
+  width: 75%;
+}
+
+.event h2 {
+  font-size: 3.5em;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.event p {
+  font-size: 1.75em;
+  line-height: 1;
+  color: #393939;
+  font-weight: 300;
+  margin: 0;
+}
+
 @media screen and (max-width: 767px) {
   .premise img {
     width: 100%;
