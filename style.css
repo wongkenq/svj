@@ -778,7 +778,8 @@ nav a:hover {
   padding: 0.5em 0 1.5em;
 }
 
-.class-schedule a {
+.class-schedule a,
+.event a {
   color: white;
   background-color: #0b6bfe;
   font-size: 0.75em;
@@ -810,6 +811,14 @@ nav a:hover {
 
 .event div {
   width: 50%;
+}
+
+.event a {
+  font-size: 1em;
+  margin: 2em;
+  width: fit-content;
+  display: block;
+  text-align: center;
 }
 
 .event img {
@@ -1001,5 +1010,46 @@ nav a:hover {
   .app-buttons {
     flex-direction: column;
     margin: 1em 0;
+  }
+
+  .upcoming-events {
+    padding: 0;
+  }
+
+  .upcoming-events h1 {
+    margin: 0;
+    padding: 3em 0 1em;
+  }
+
+  .class-schedule {
+    padding: 0.5em;
+    padding-bottom: 1em;
+  }
+
+  .class-schedule p {
+    font-size: 0.9em;
+  }
+  .event {
+    flex-direction: column;
+    padding: 1em 1em;
+    width: 80%;
+  }
+
+  .event div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .event h2 {
+    font-size: 2em;
+  }
+
+  .event p {
+    font-size: 1.25em;
+    padding-bottom: 1em;
+  }
+
+  .event a {
+    font-size: 1em;
   }
 }
